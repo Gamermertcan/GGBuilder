@@ -13,12 +13,26 @@
 </head>
 <body>
   <div class="frame">
-    Block:<input type="text">
-    ID:<input type="text">
-    JavaScript:<textarea placeholder="JavaScript Here..."></textarea>
+    Extension Name:<input type="text" id="EXT">
+    Name:<input type="text" id="Name">
+    ID:<input type="text" id="ID">
+    JavaScript:<textarea placeholder="JavaScript Here..." id="JS"></textarea>
+    <button onclick="add()?">Add</button>
   <\div>
   <div id="blocks">
     
   </div>
+  
+  <script>
+    const blocks = []
+
+    const inputEXT = document.getElementById("EXT");
+    const inputName = document.getElementById("Name");
+    const inputID = document.getElementById("ID");
+    const inputJS = document.getElementById("JS");
+    function add(N,I,JS) {
+      blocks[inputName.value] = [N,I,JS];
+    };
+  </script>
 </body>
 </html>
