@@ -14,10 +14,12 @@
 <body>
   <div class="frame">
     Extension Name:<input type="text" id="EXT">
+    <button onclick="end();">Download Extension</button>
+    -
     Name:<input type="text" id="Name">
     ID:<input type="text" id="ID">
     JavaScript:<textarea placeholder="JavaScript Here..." id="JS"></textarea>
-    <button onclick="add()?">Add</button>
+    <button onclick="add()?">Add Block</button>
   <\div>
   <div id="blocks">
     
@@ -32,6 +34,9 @@
     const inputJS = document.getElementById("JS");
     function add(N,I,JS) {
       blocks[inputName.value] = [N,I,JS];
+    };
+    function end() {
+      // hey connor, can you make a code makes a js from blocks? just copy an empty scratch extension and see what you need to use
     };
   </script>
 </body>
